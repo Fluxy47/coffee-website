@@ -33,8 +33,8 @@ function About() {
     //     <img src={aboutimg} className="relative right-[10%]" />
     //   </div>
     // </div>
-    <div className="h-screen w-full">
-      <section className="flex flex-col h-auto lg:h-screen w-full items-center justify-evenly ">
+    <div className="h-screen w-full ">
+      <section className="flex flex-col  h-auto lg:h-screen w-full items-center justify-evenly ">
         <div className="flex flex-col items-center mb-[30px] lg:mb-0">
           <h2 className="text-4xl text-center text-black font-bold">
             ABOUT OUR SHOP
@@ -60,7 +60,7 @@ function About() {
               <button>Read more</button>
             </div>
           </section>
-          <img src={aboutimg} />
+          <img src={aboutimg} className="hidden lg:inline" />
         </div>
       </section>
     </div>

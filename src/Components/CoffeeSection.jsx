@@ -52,7 +52,7 @@ function CoffeeSection() {
     //     </Carousel>
     //   </div>
     // </section>
-    <div className="h-screen w-full">
+    <div className="h-auto w-full">
       <section className="flex flex-col h-auto lg:h-screen w-full items-center justify-evenly">
         <div className="flex flex-col items-center mb-[30px] lg:mb-0">
           <h2 className="text-4xl text-center text-black font-bold">
@@ -68,7 +68,7 @@ function CoffeeSection() {
           </Carousel>
         </div>
 
-        <div className="flex-col lg:hidden">
+        <div className="flex-col lg:hidden h-auto ">
           {items.map((item, idx) => (
             <Card key={idx} item={item} />
           ))}

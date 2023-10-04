@@ -18,7 +18,7 @@ function App() {
       <About />
       <Testimony />
       <Blog />
-      <Contact />
+      {/* <Contact />  */}
     </>
   );
 }

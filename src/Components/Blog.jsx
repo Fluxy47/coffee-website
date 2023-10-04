@@ -23,14 +23,16 @@ function Blog() {
           </h2>
           <img src={icon} className="w-[50px] h-5" />
         </div>
-        <div className="flex gap-7">
+        <div className="flex flex-col lg:flex-row gap-7">
           <section
-            className="bg-white w-[40vw]"
+            className="bg-white w-[90vw] lg:w-[40vw]"
             style={{ boxShadow: "0px 20px 40px rgba(0, 0, 0, 0.5)" }}
           >
-            <img src={blog1} className="w-[40vw]" />
-            <h2>PREP TECHNIQUES COFFEE</h2>
-            <p>
+            <img src={blog1} className="w-[90vw] lg:w-[40vw]" />
+            <h2 className="text-2xl font-bold ml-5 mb-5 mt-5">
+              PREP TECHNIQUES COFFEE
+            </h2>
+            <p className="ml-5 mb-10">
               distracted by the readable content of a page when looking at its
               layout. The point of using Lorem Ipsum is that it has a
               moredistracted by the readable content of a page when looking at
@@ -38,13 +40,15 @@ function Blog() {
             </p>
           </section>
           <section
-            className="bg-white w-[40vw]"
+            className="bg-white w-[90vw] lg:w-[40vw]"
             style={{ boxShadow: "0px 20px 40px rgba(0, 0, 0, 0.5)" }}
           >
             {" "}
-            <img src={blog2} className="w-[40vw]" />
-            <h2>PREP TECHNIQUES COFFEE</h2>
-            <p>
+            <img src={blog2} className="w-[90vw] lg:w-[40vw]" />
+            <h2 className="text-2xl font-bold ml-5 mb-5 mt-5">
+              PREP TECHNIQUES COFFEE
+            </h2>
+            <p className="ml-5 mb-10">
               distracted by the readable content of a page when looking at its
               layout. The point of using Lorem Ipsum is that it has a
               moredistracted by the readable content of a page when looking at
