@@ -19,14 +19,14 @@ function Testimony() {
     //   </section>
     // </div>
     <div className=" h-auto lg:h-[120vh] w-full ">
-      <img src={clientbg} className="relative hidden lg:inline" />
-      <div className=" relative lg:top-[-100vh] flex flex-col items-center mb-[30px] lg:mb-10">
+      {/* <img src={clientbg} className="fixed hidden lg:inline" /> */}
+      <div className=" relative  flex flex-col items-center mb-[30px] lg:mb-10">
         <h2 className="text-4xl text-center text-black font-bold">
           What customer says about us
         </h2>
         <img src={icon} className="w-[50px] h-5" />
       </div>
-      <section className="relative lg:top-[-100vh]  lg:left-[10%] flex flex-col h-auto lg:h-[90vh] w-full lg:w-[65vw]  items-center">
+      <section className="relative lg:left-[10%] flex flex-col h-auto lg:h-[90vh] w-full lg:w-[65vw]  items-center">
         <section className="flex flex-col gap-5">
           <div className="flex flex-col lg:flex-row">
             <img src={client1} className="h-[150px] w-[150px] " />

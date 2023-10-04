@@ -4,7 +4,7 @@ export default {
   theme: {
     extend: {
       backgroundImage: {
-        clientbg: "url('./images/client-bg.png')",
+        footerbg: "url('./images/footer-bg.png')",
       },
     },
   },

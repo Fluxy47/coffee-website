@@ -43,7 +43,7 @@ function About() {
         </div>
         <div className="border-4 border-black flex w-full h-[70vh]">
           <section
-            className="w-[70vmin] h-[50vmin] bg-white relative left-[10%] top-10 z-[2]"
+            className="w-[30vmax] h-[25vmax] bg-white relative left-[10%] top-10 z-[2]"
             style={{ boxShadow: "0px 20px 40px rgba(0, 0, 0, 0.5)" }}
           >
             <div className="flex flex-col h-full justify-evenly">
