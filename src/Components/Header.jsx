@@ -18,8 +18,9 @@ const text = {
 function Header() {
   const [element, controls] = useScroll();
   return (
-    <div ref={element} className="bg-white h-screen w-full">
-      <div className="bg-[#C79363] absolute right-0 h-screen w-[40vw]" />
+    <div ref={element} className="bg-[#E0E0E0] h-screen w-full">
+      <div className="bg-[#C79363] hidden lg:inline absolute right-0 h-screen w-[40vw]" />
+      <div className="bg-gradient-to-bl from-[#140B06] lg:hidden to-[#C79363]  fixed z-[2] right-0 h-screen w-full" />
       <motion.img
         initial={{ opacity: 0 }}
         variants={text}
@@ -28,9 +29,9 @@ function Header() {
           duration: 0.7,
         }}
         src={cup}
-        className="absolute top-[-6%] right-[4%] z-[2]"
+        className="absolute top-[-5%] right-[4%] z-[4]"
       />
-      <div className="absolute top-0 left-0 flex w-full   mt-5">
+      <div className="absolute top-0 left-0 flex w-full ml-[-20px] lg:ml-0  mt-5">
         <svg
           className="ml-5"
           height={40}
@@ -79,27 +80,29 @@ function Header() {
             </tspan>
           </text>
         </svg>
-        <div className="flex absolute right-10 gap-6 m-auto">
+        <div className="flex absolute right-0 lg:right-10 gap-6 m-auto">
           <h2 className="text-lg">Menu</h2>
           <h2 className="text-lg">About us</h2>
           <h2 className="text-lg">Reviews</h2>
           <h2 className="text-lg">Blogs</h2>
         </div>
       </div>
-      <section className="relative top-[20%] ml-10 flex flex-col w-[35vw]">
-        <h1 className="text-5xl">Best Coffee</h1>
+      <section className="relative top-[30%] mx-1 lg:ml-10 flex flex-col w-full lg:w-[35vw] z-[3]">
+        <h1 className="text-5xl font-raleway">Best Coffee</h1>
 
-        <h1 className="text-5xl mb-4 text-ellipsis  whitespace-nowrap">
-          Make your day great
+        <h1 className=" text-4xl text-center lg:text-5xl mb-4 text-ellipsis  whitespace-nowrap">
+          <span className="text-[#C79363]">Make</span> your day{" "}
+          <span className="text-[#C79363]">Make</span>
           <br />
-          with our coffee
+          with our{""}
+          <span className="text-[#C79363] ml-3">coffee</span>
         </h1>
         <p className="mb-6">
           now use Lorem Ipsum as their default model text, and a search for
           'lorem ipsum' will uncover many web sites still in their infancynow
           use Lorem Ipsum as their default model text,
         </p>
-        <button className="bg-blue-500 hover:bg-blue-700 w-[200px] text-white font-bold py-2 px-4 rounded-full">
+        <button className="bg-gradient-to-r from-[#C79363]  to-[#140B06] hover:bg-blue-700 w-[300px] h-[50px] text-white font-bold py-2 px-4 mx-auto rounded-full z-50">
           Button
         </button>
       </section>

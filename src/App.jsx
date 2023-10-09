@@ -35,7 +35,9 @@ function App() {
       <CoffeeSection />
       <About />
       <Testimony />
+
       <Blog />
+
       <Footer />
       {/* <Contact />  */}
     </main>

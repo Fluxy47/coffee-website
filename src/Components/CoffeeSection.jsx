@@ -68,27 +68,19 @@ function CoffeeSection() {
   return (
     <div ref={element} className="h-auto w-full">
       <section className="flex flex-col h-auto lg:h-screen w-full items-center justify-evenly">
-        <div className="flex flex-col items-center mb-[30px] lg:mb-0">
-          <motion.h2
-            variants={text}
-            animate={controls}
-            transition={{
-              duration: 0.3,
-            }}
-            className="text-4xl text-center text-black font-bold"
-          >
+        <motion.div
+          variants={text}
+          animate={controls}
+          transition={{
+            duration: 0.3,
+          }}
+          className="flex flex-col items-center mb-[30px] lg:mb-0"
+        >
+          <h2 className="text-4xl text-center text-black font-bold">
             OUR COFFEE OFFER
-          </motion.h2>
-          <motion.img
-            variants={text}
-            animate={controls}
-            transition={{
-              duration: 0.4,
-            }}
-            src={icon}
-            className="w-[50px] h-5"
-          />
-        </div>
+          </h2>
+          <img src={icon} className="w-[50px] h-5" />
+        </motion.div>
         <motion.div
           variants={slider}
           animate={controls}
@@ -97,7 +89,14 @@ function CoffeeSection() {
           }}
           className="w-full hidden lg:inline"
         >
-          <Carousel className="ml-11" infinite={true} responsive={responsive}>
+          <Carousel
+            className="ml-11"
+            swipeable={false}
+            draggable={false}
+            infinite={true}
+            removeArrowOnDeviceType={["tablet", "mobile"]}
+            responsive={responsive}
+          >
             {items.map((item, idx) => (
               <Card key={idx} item={item} />
             ))}
