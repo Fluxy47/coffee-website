@@ -90,7 +90,7 @@ function CoffeeSection() {
           className="w-full hidden lg:inline"
         >
           <Carousel
-            className="ml-11"
+            className="ml-2"
             swipeable={false}
             draggable={false}
             infinite={true}
@@ -103,11 +103,11 @@ function CoffeeSection() {
           </Carousel>
         </motion.div>
 
-        <div className="flex-col lg:hidden h-auto ">
+        <motion.div className="flex-col lg:hidden h-auto">
           {items.map((item, idx) => (
             <Card key={idx} item={item} />
           ))}
-        </div>
+        </motion.div>
       </section>
     </div>
   );

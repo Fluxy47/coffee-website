@@ -48,7 +48,7 @@ function About() {
   };
 
   return (
-    <div ref={element} className="h-screen w-full mb-7">
+    <div ref={element} className="h-screen w-full lg:mb-7">
       <section className="flex flex-col  h-auto lg:h-screen w-full items-center justify-evenly ">
         <motion.div
           variants={text}
@@ -70,12 +70,14 @@ function About() {
             transition={{
               duration: 0.5,
             }}
-            className=" w-full lg:w-[40vmax] lg:h-[30vmax]  bg-white lg:relative left-[15%] top-10 z-[2]"
+            className=" w-full lg:w-[40vmax] md:h-[40vh] lg:h-[33vmax]  bg-white lg:relative left-[15%] top-8 z-[2]"
             style={{ boxShadow: "0px 20px 40px rgba(0, 0, 0, 0.5)" }}
           >
-            <div className="flex flex-col h-full justify-evenly bg-gradient-to-bl from-[#140B06]  via-[#A56E3B] to-[#140B06]">
-              <h2 className="ml-2 text-3xl">Coffee distribution </h2>
-              <p className="mx-3 lg:text-lg">
+            <div className="flex flex-col h-full justify-evenly bg-gradient-to-bl from-[#140B06]  via-[#A56E3B] via-75% to-[#140B06]  ">
+              <h2 className="ml-2 text-3xl lg:text-3xl md:text-5xl mb-5 mt-2">
+                Coffee distribution{" "}
+              </h2>
+              <p className="mx-3 md:text-lg lg:text-base mb-5">
                 has a more-or-less normal distribution of letters, as opposed to
                 using 'Content here, content here', making it look like readable
                 English. Many desktop publishing packages and web page editorhas
@@ -84,7 +86,7 @@ function About() {
                 English. Many desktop publishing packages and web page editor
               </p>
 
-              <button className="bg-gradient-to-r from-[#C79363]  to-[#140B06] w-[200px] text-white font-bold py-2 px-4 mx-auto rounded-full">
+              <button className="bg-gradient-to-r from-[#C79363]  to-[#140B06] w-[300px] h-[50px] lg:w-[300px] lg:h-[50px] md:w-[400px] md:h-[70px] text-white font-bold mb-5 md:mb-10 py-2 px-4 mx-auto rounded-full">
                 Button
               </button>
             </div>

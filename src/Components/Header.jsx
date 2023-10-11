@@ -18,9 +18,9 @@ const text = {
 function Header() {
   const [element, controls] = useScroll();
   return (
-    <div ref={element} className="bg-[#E0E0E0] h-screen w-full">
+    <div ref={element} className=" h-screen w-full">
       <div className="bg-[#C79363] hidden lg:inline absolute right-0 h-screen w-[40vw]" />
-      <div className="bg-gradient-to-bl from-[#140B06] lg:hidden to-[#C79363]  fixed z-[2] right-0 h-screen w-full" />
+      <div className="bg-gradient-to-bl from-[#140B06] lg:hidden to-[#C79363]  absolute z-[2] right-0 h-screen w-full" />
       <motion.img
         initial={{ opacity: 0 }}
         variants={text}
@@ -29,7 +29,7 @@ function Header() {
           duration: 0.7,
         }}
         src={cup}
-        className="absolute top-[-5%] right-[4%] z-[4]"
+        className="absolute top-[-5%] right-[4%] z-[4] hidden lg:inline"
       />
       <div className="absolute top-0 left-0 flex w-full ml-[-20px] lg:ml-0  mt-5">
         <svg
@@ -88,21 +88,23 @@ function Header() {
         </div>
       </div>
       <section className="relative top-[30%] mx-1 lg:ml-10 flex flex-col w-full lg:w-[35vw] z-[3]">
-        <h1 className="text-5xl font-raleway">Best Coffee</h1>
+        <h1 className="text-5xl md:text-7xl lg:text-5xl font-raleway">
+          Best Coffee
+        </h1>
 
-        <h1 className=" text-4xl text-center lg:text-5xl mb-4 text-ellipsis  whitespace-nowrap">
+        <h1 className=" text-4xl md:text-7xl text-center lg:text-5xl mb-4 text-ellipsis  whitespace-nowrap">
           <span className="text-[#C79363]">Make</span> your day{" "}
           <span className="text-[#C79363]">Make</span>
           <br />
           with our{""}
           <span className="text-[#C79363] ml-3">coffee</span>
         </h1>
-        <p className="mb-6">
+        <p className="mb-6 md:text-2xl mx-3 lg:text-base">
           now use Lorem Ipsum as their default model text, and a search for
           'lorem ipsum' will uncover many web sites still in their infancynow
           use Lorem Ipsum as their default model text,
         </p>
-        <button className="bg-gradient-to-r from-[#C79363]  to-[#140B06] hover:bg-blue-700 w-[300px] h-[50px] text-white font-bold py-2 px-4 mx-auto rounded-full z-50">
+        <button className="bg-gradient-to-r from-[#C79363]  to-[#140B06] hover:bg-blue-700 w-[300px] h-[50px] md:w-[400px] md:h-[70px] text-white font-bold py-2 px-4 mx-auto rounded-full z-50">
           Button
         </button>
       </section>

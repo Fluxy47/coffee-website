@@ -10,11 +10,14 @@ function Footer() {
             here, content here', making it look like readable English. Many
             desktop publishing packages and web page editors now use
           </p>
-          <input
-            type="text"
-            title="Contact Us"
-            className=" md:w-[40vmax] md:h-[50px] rounded-3xl mb-[20px]"
-          />
+          <div>
+            <label htmlFor="contactUs">Contact us:</label>
+            <input
+              type="text"
+              id="contactUs"
+              className="md:w-[40vmax] md:h-[50px] rounded-3xl mb-[20px]"
+            />
+          </div>
         </div>
       </section>
     </div>
