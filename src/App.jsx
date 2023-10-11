@@ -39,7 +39,7 @@ function App() {
       <section data-scroll-section>
         <CoffeeSection />
       </section>
-      {/* <section data-scroll-section>
+      <section data-scroll-section>
         <About />
       </section>
       <section data-scroll-section>
@@ -50,7 +50,7 @@ function App() {
       </section>
       <section data-scroll-section>
         <Footer />
-      </section> */}
+      </section>
     </main>
   );
 }
