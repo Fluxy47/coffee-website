@@ -23,7 +23,7 @@ function About() {
   const text1 = {
     hidden: {
       opacity: 0,
-      y: 40,
+      y: 50,
     },
     show: {
       opacity: 1,
@@ -36,7 +36,7 @@ function About() {
   const imgani = {
     hidden: {
       opacity: 0,
-      x: 30,
+      x: 40,
     },
     show: {
       opacity: 1,
@@ -70,7 +70,7 @@ function About() {
             transition={{
               duration: 0.5,
             }}
-            className=" w-full lg:w-[40vmax] md:h-[40vh] lg:h-[33vmax]  bg-white lg:relative left-[15%] top-8 z-[2]"
+            className=" w-full lg:w-[40vmax] md:h-[40vh] lg:h-[32vmax]  bg-white lg:fixed left-[15%] top-[30%] z-[2]"
             style={{ boxShadow: "0px 20px 40px rgba(0, 0, 0, 0.5)" }}
           >
             <div className="flex flex-col h-full justify-evenly bg-gradient-to-bl from-[#140B06]  via-[#A56E3B] via-75% to-[#140B06]  ">
@@ -97,8 +97,8 @@ function About() {
             transition={{
               duration: 0.5,
             }}
-            src={aboutimg}
-            className="w-full lg:w-auto object-contain "
+            src="https://ik.imagekit.io/fluxy/CoffeeFolder/about-img.png?tr=w-1200"
+            className="w-full lg:w-auto lg:h-[70vh] object-contain absolute right-16"
           />
         </div>
       </section>

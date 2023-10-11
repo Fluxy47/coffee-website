@@ -71,7 +71,10 @@ function Blog() {
             style={{ boxShadow: "0px 20px 40px rgba(0, 0, 0, 0.5)" }}
           >
             <div className="relative overflow-hidden w-[90vw] lg:w-[40vw]">
-              <img src={blog1} className="w-[90vw] lg:w-[40vw]" />
+              <img
+                src="https://ik.imagekit.io/fluxy/CoffeeFolder/blog-img1.png?tr=w-800"
+                className="w-[90vw] lg:w-[40vw]"
+              />
             </div>
             <h2 className="text-2xl font-bold ml-5 mb-5 mt-5">
               PREP TECHNIQUES COFFEE
@@ -93,7 +96,10 @@ function Blog() {
             style={{ boxShadow: "0px 20px 40px rgba(0, 0, 0, 0.5)" }}
           >
             <div className="relative overflow-hidden w-[90vw] lg:w-[40vw]">
-              <img src={blog2} className="w-[90vw] lg:w-[40vw]" />
+              <img
+                src="https://ik.imagekit.io/fluxy/CoffeeFolder/blog-img2.png?tr=w-800"
+                className="w-[90vw] lg:w-[40vw]"
+              />
             </div>
             <h2 className="text-2xl font-bold ml-5 mb-5 mt-5">
               PREP TECHNIQUES COFFEE

@@ -59,10 +59,22 @@ function CoffeeSection() {
   };
 
   const items = [
-    { img: img1, title: "Types of coffee" },
-    { img: img2, title: "Bean Varieties" },
-    { img: img3, title: "coffee and pastery" },
-    { img: img4, title: "cofffee to go" },
+    {
+      img: "https://ik.imagekit.io/fluxy/CoffeeFolder/img-1.png?tr=w-800",
+      title: "Types of coffee",
+    },
+    {
+      img: "https://ik.imagekit.io/fluxy/CoffeeFolder/img-2.png?tr=w-800",
+      title: "Bean Varieties",
+    },
+    {
+      img: "https://ik.imagekit.io/fluxy/CoffeeFolder/img-3.png?tr=w-800",
+      title: "coffee and pastery",
+    },
+    {
+      img: "https://ik.imagekit.io/fluxy/CoffeeFolder/img-4.png?tr=w-800",
+      title: "cofffee to go",
+    },
   ];
 
   return (

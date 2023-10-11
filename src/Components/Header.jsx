@@ -28,12 +28,12 @@ function Header() {
         transition={{
           duration: 0.7,
         }}
-        src={cup}
-        className="absolute top-[-5%] right-[4%] z-[4] hidden lg:inline"
+        src="https://ik.imagekit.io/fluxy/CoffeeFolder/cup.png?tr=w-1600"
+        className="absolute bottom-[-15%] right-[4%] z-[4] hidden lg:inline"
       />
-      <div className="absolute top-0 left-0 flex w-full ml-[-20px] lg:ml-0  mt-5">
+      <div className="absolute z-[50] top-0 left-0 flex w-full ml-[-20px] lg:ml-0  mt-5">
         <svg
-          className="ml-5"
+          className="ml-7"
           height={40}
           id="Layer_2"
           viewBox="0 0 156.28 52.47"
@@ -80,7 +80,7 @@ function Header() {
             </tspan>
           </text>
         </svg>
-        <div className="flex absolute right-0 lg:right-10 gap-6 m-auto">
+        <div className="lg:flex hidden absolute right-0 lg:right-10 gap-6 m-auto">
           <h2 className="text-lg">Menu</h2>
           <h2 className="text-lg">About us</h2>
           <h2 className="text-lg">Reviews</h2>
@@ -88,7 +88,7 @@ function Header() {
         </div>
       </div>
       <section className="relative top-[30%] mx-1 lg:ml-10 flex flex-col w-full lg:w-[35vw] z-[3]">
-        <h1 className="text-5xl md:text-7xl lg:text-5xl font-raleway">
+        <h1 className="text-5xl md:text-7xl lg:text-5xl font-raleway ml-1">
           Best Coffee
         </h1>
 
@@ -104,7 +104,7 @@ function Header() {
           'lorem ipsum' will uncover many web sites still in their infancynow
           use Lorem Ipsum as their default model text,
         </p>
-        <button className="bg-gradient-to-r from-[#C79363]  to-[#140B06] hover:bg-blue-700 w-[300px] h-[50px] md:w-[400px] md:h-[70px] text-white font-bold py-2 px-4 mx-auto rounded-full z-50">
+        <button className="bg-gradient-to-r from-[#C79363]  to-[#140B06] hover:bg-blue-700 w-[300px] h-[50px] lg:w-[300px] lg:h-[50px] md:w-[400px] md:h-[70px] text-white font-bold py-2 px-4 mx-auto rounded-full z-50">
           Button
         </button>
       </section>
