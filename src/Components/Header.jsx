@@ -33,7 +33,7 @@ function Header() {
       />
       <div className="absolute z-[50] top-0 left-0 flex w-full ml-[-20px] lg:ml-0  mt-5">
         <svg
-          className="ml-7"
+          className="ml-7 cursor-pointer"
           height={40}
           id="Layer_2"
           viewBox="0 0 156.28 52.47"
@@ -81,14 +81,14 @@ function Header() {
           </text>
         </svg>
         <div className="lg:flex hidden absolute right-0 lg:right-10 gap-6 m-auto">
-          <h2 className="text-lg">Menu</h2>
-          <h2 className="text-lg">About us</h2>
-          <h2 className="text-lg">Reviews</h2>
-          <h2 className="text-lg">Blogs</h2>
+          <h2 className="text-lg cursor-pointer font-bold">Menu</h2>
+          <h2 className="text-lg cursor-pointer font-bold">About us</h2>
+          <h2 className="text-lg cursor-pointer font-bold">Reviews</h2>
+          <h2 className="text-lg cursor-pointer font-bold">Blogs</h2>
         </div>
       </div>
       <section className="relative top-[30%] mx-1 lg:ml-10 flex flex-col w-full lg:w-[35vw] z-[3]">
-        <h1 className="text-5xl md:text-7xl lg:text-5xl font-raleway ml-1">
+        <h1 className="text-5xl md:text-7xl lg:text-5xl font-raleway ml-1 italic">
           Best Coffee
         </h1>
 

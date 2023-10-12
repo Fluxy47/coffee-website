@@ -77,7 +77,7 @@ function About() {
               <h2 className="ml-2 text-3xl lg:text-3xl md:text-5xl mb-5 mt-2">
                 Coffee distribution{" "}
               </h2>
-              <p className="mx-3 md:text-lg lg:text-base mb-5">
+              <p className="mx-3 md:text-2xl lg:text-base mb-5">
                 has a more-or-less normal distribution of letters, as opposed to
                 using 'Content here, content here', making it look like readable
                 English. Many desktop publishing packages and web page editorhas
@@ -98,7 +98,7 @@ function About() {
               duration: 0.5,
             }}
             src="https://ik.imagekit.io/fluxy/CoffeeFolder/about-img.png?tr=w-1200"
-            className="w-full lg:w-auto lg:h-[70vh] object-contain absolute right-16"
+            className="w-full lg:w-auto lg:h-[70vh] object-contain lg:absolute right-16"
           />
         </div>
       </section>
