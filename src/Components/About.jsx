@@ -70,14 +70,14 @@ function About() {
             transition={{
               duration: 0.5,
             }}
-            className=" w-full lg:w-[40vmax] md:h-[40vh] lg:h-[32vmax]  bg-white lg:fixed left-[15%] top-[30%] z-[2]"
+            className=" w-full lg:w-[40vmax] md:h-[40vh] lg:h-[32vmax]  2xl:w-[35vmax] 2xl:h-[25vmax]  bg-white lg:fixed left-[15%] top-[30%] 2xl:top-[35%] 2xl:left-[20%] z-[2]"
             style={{ boxShadow: "0px 20px 40px rgba(0, 0, 0, 0.5)" }}
           >
             <div className="flex flex-col h-full justify-evenly bg-gradient-to-bl from-[#140B06]  via-[#A56E3B] via-75% to-[#140B06]  ">
-              <h2 className="ml-2 text-3xl lg:text-3xl md:text-5xl mb-5 mt-2">
+              <h2 className="ml-2 text-3xl lg:text-3xl md:text-5xl 2xl:text-5xl  mb-5 mt-2 font-raleway ">
                 Coffee distribution{" "}
               </h2>
-              <p className="mx-3 md:text-2xl lg:text-base mb-5">
+              <p className="mx-3 md:text-2xl 2xl:text-lg lg:text-base mb-5">
                 has a more-or-less normal distribution of letters, as opposed to
                 using 'Content here, content here', making it look like readable
                 English. Many desktop publishing packages and web page editorhas

@@ -3,7 +3,7 @@ import React from "react";
 function Footer() {
   return (
 
-    <div className="w-full h-[50vh] bg-footerbg relative ">
+    <div className="w-full h-[50vh] bg-footerbg border-4  ">
       <section className="flex h-full w-full items-center justify-center">
         <div className="flex flex-col items-center  h-full  justify-evenly ">
           <h1 className="text-white text-3xl md:text-5xl ">Address</h1>
