@@ -3,7 +3,7 @@ import About from "./Components/About";
 import Blog from "./Components/Blog";
 import Card from "./Components/Card";
 import CoffeeSection from "./Components/CoffeeSection";
-import Contact from "./Components/Contact";
+import imagesLoaded from "imagesloaded";
 import Header from "./Components/Header";
 import Testimony from "./Components/Testimony";
 import LocomotiveScroll from "locomotive-scroll";
@@ -21,23 +21,36 @@ function App() {
       getDirection: true, // Enable drag behavior for direction detection.
     });
 
+    const imgLoad = imagesLoaded(myRef.current);
+    imgLoad.on("done", () => {
+      // Trigger a scroll update to recalculate the height
+      scroll.update();
+    });
+
     return () => {
       scroll.destroy();
     };
   }, []);
   return (
-    <main ref={myRef} data-scroll-container>
-      {/* <CoffeeSection />
-      <About />
-      <Testimony />
-      <Blog /> */}
-      <Header />
-      <CoffeeSection />
-      <About />
-      <Testimony />
-      <Blog />
-      <Footer />
-      {/* <Contact />  */}
+    <main className="bg-[#E9E0C3]  " ref={myRef} data-scroll-container>
+      <section data-scroll-section>
+        <Header />
+      </section>
+      <section data-scroll-section>
+        <CoffeeSection />
+      </section>
+      <section data-scroll-section>
+        <About />
+      </section>
+      <section data-scroll-section>
+        <Testimony />
+      </section>
+      <section data-scroll-section>
+        <Blog />
+      </section>
+      <section data-scroll-section>
+        <Footer />
+      </section>
     </main>
   );
 }

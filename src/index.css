@@ -2,6 +2,8 @@
 @tailwind components;
 @tailwind utilities;
 
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@600&display=swap");
+
 * {
   margin: 0;
   padding: 0;
@@ -88,4 +90,22 @@ html.has-scroll-dragging {
 [data-scroll-direction="horizontal"] .c-scrollbar_thumb {
   right: auto;
   bottom: 0;
+}
+
+.hover01 {
+  background-color: #eee8d2;
+}
+
+.hover01 section img {
+  overflow: hidden;
+  position: relative;
+  object-fit: cover;
+  -webkit-transform: scale(1);
+  transform: scale(1);
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+}
+.hover01 section:hover img {
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
 }

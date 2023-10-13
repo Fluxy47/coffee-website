@@ -59,36 +59,40 @@ function CoffeeSection() {
   };
 
   const items = [
-    { img: img1, title: "Types of coffee" },
-    { img: img2, title: "Bean Varieties" },
-    { img: img3, title: "coffee and pastery" },
-    { img: img4, title: "cofffee to go" },
+    {
+      img: "https://ik.imagekit.io/fluxy/CoffeeFolder/img-1.png?tr=w-800",
+      title: "Types of coffee",
+    },
+    {
+      img: "https://ik.imagekit.io/fluxy/CoffeeFolder/img-2.png?tr=w-800",
+      title: "Bean Varieties",
+    },
+    {
+      img: "https://ik.imagekit.io/fluxy/CoffeeFolder/img-3.png?tr=w-800",
+      title: "coffee and pastery",
+    },
+    {
+      img: "https://ik.imagekit.io/fluxy/CoffeeFolder/img-4.png?tr=w-800",
+      title: "cofffee to go",
+    },
   ];
 
   return (
     <div ref={element} className="h-auto w-full">
       <section className="flex flex-col h-auto lg:h-screen w-full items-center justify-evenly">
-        <div className="flex flex-col items-center mb-[30px] lg:mb-0">
-          <motion.h2
-            variants={text}
-            animate={controls}
-            transition={{
-              duration: 0.3,
-            }}
-            className="text-4xl text-center text-black font-bold"
-          >
+        <motion.div
+          variants={text}
+          animate={controls}
+          transition={{
+            duration: 0.3,
+          }}
+          className="flex flex-col items-center mb-[30px] lg:mb-0"
+        >
+          <h2 className="text-4xl text-center text-black font-bold">
             OUR COFFEE OFFER
-          </motion.h2>
-          <motion.img
-            variants={text}
-            animate={controls}
-            transition={{
-              duration: 0.4,
-            }}
-            src={icon}
-            className="w-[50px] h-5"
-          />
-        </div>
+          </h2>
+          <img src={icon} className="w-[50px] h-5" />
+        </motion.div>
         <motion.div
           variants={slider}
           animate={controls}
@@ -97,18 +101,25 @@ function CoffeeSection() {
           }}
           className="w-full hidden lg:inline"
         >
-          <Carousel className="ml-11" infinite={true} responsive={responsive}>
+          <Carousel
+            className="ml-2"
+            swipeable={false}
+            draggable={false}
+            infinite={true}
+            removeArrowOnDeviceType={["tablet", "mobile"]}
+            responsive={responsive}
+          >
             {items.map((item, idx) => (
               <Card key={idx} item={item} />
             ))}
           </Carousel>
         </motion.div>
 
-        <div className="flex-col lg:hidden h-auto ">
+        <motion.div className="flex-col lg:hidden h-auto">
           {items.map((item, idx) => (
             <Card key={idx} item={item} />
           ))}
-        </div>
+        </motion.div>
       </section>
     </div>
   );
