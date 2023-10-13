@@ -16,6 +16,13 @@ function App() {
     const scroll = new LocomotiveScroll({
       el: myRef.current,
       smooth: true,
+      mobile: {
+        smooth: true,
+      },
+      tablet: {
+        smooth: true,
+      },
+
       multiplier: 0.6,
       inertia: 0.6, // Add inertia effect. Adjust the value as needed (0.0 - 1.0).
       getDirection: true, // Enable drag behavior for direction detection.
