@@ -48,7 +48,7 @@ function Testimony() {
         transition={{
           duration: 0.3,
         }}
-        className=" relative  flex flex-col items-center mb-[30px] lg:mb-10"
+        className=" relative  flex flex-col items-center mb-[30px]  lg:mb-10"
       >
         <h2 className="text-4xl text-center text-black font-bold">
           What customer says about us
@@ -56,7 +56,7 @@ function Testimony() {
         <img src={icon} className="w-[50px] h-5" />
       </motion.div>
       <section className="relative lg:left-[10%] flex flex-col h-auto lg:h-[90vh] w-full lg:w-[65vw]  items-center">
-        <section className="flex flex-col gap-5">
+        <section className="flex flex-col gap-5 2xl:gap-7">
           <motion.div
             variants={childVariants}
             animate={controls}
@@ -65,10 +65,10 @@ function Testimony() {
             }}
             className="flex flex-col lg:flex-row"
           >
-            <img src={client1} className="h-[150px] w-[150px] " />
+            <img src={client1} className="h-[150px] w-[150px] 2xl:h-[200px] 2xl:w-[200px] " />
             <div className="flex flex-col">
-              <h2 className="text-2xl font-bold ml-6 mb-2">Joy Moark</h2>
-              <p className="ml-6 text-lg">
+              <h2 className="text-2xl 2xl:text-3xl font-bold ml-6 mb-2">Joy Moark</h2>
+              <p className="ml-6 text-lg ">
                 now use Lorem Ipsum as their default model text, and a search
                 for 'lorem ipsum' will uncover many web sites still in their
                 infancynow use Lorem Ipsum as their default model text,
@@ -84,9 +84,9 @@ function Testimony() {
             }}
             className="flex flex-col lg:flex-row"
           >
-            <img src={client2} className="h-[150px] w-[150px] " />
+            <img src={client2} className="h-[150px] w-[150px] 2xl:h-[200px] 2xl:w-[200px] " />
             <div className="flex flex-col">
-              <h2 className="text-2xl font-bold ml-6 mb-2">Joy Moark</h2>
+              <h2 className="text-2xl 2xl:text-3xl font-bold ml-6 mb-2">Joy Moark</h2>
               <p className="ml-6 text-lg">
                 now use Lorem Ipsum as their default model text, and a search
                 for 'lorem ipsum' will uncover many web sites still in their
@@ -103,9 +103,9 @@ function Testimony() {
             }}
             className="flex flex-col lg:flex-row"
           >
-            <img src={client3} className="h-[150px] w-[150px]" />
+            <img src={client3} className="h-[150px] w-[150px] 2xl:h-[200px] 2xl:w-[200px] " />
             <div className="flex flex-col">
-              <h2 className="text-2xl font-bold ml-6 mb-2">Joy Moark</h2>
+              <h2 className="text-2xl 2xl:text-3xl font-bold ml-6 mb-2">Joy Moark</h2>
               <p className="ml-6 text-lg">
                 now use Lorem Ipsum as their default model text, and a search
                 for 'lorem ipsum' will uncover many web sites still in their

@@ -38,6 +38,11 @@ function App() {
       scroll.destroy();
     };
   }, []);
+
+  const width = window.innerWidth
+  const height = window.innerHeight
+  console.log("width:",width,"height:",height)
+
   return (
     <main className="bg-[#E9E0C3]  " ref={myRef} data-scroll-container>
       <section data-scroll-section>
