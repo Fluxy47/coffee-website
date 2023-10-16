@@ -17,21 +17,14 @@ function App() {
       el: myRef.current,
       smooth: true,
       mobile: {
-        smooth: true,
+        smooth: false,
       },
       tablet: {
-        smooth: true,
+        smooth: false,
       },
-
       multiplier: 0.6,
       inertia: 0.6, // Add inertia effect. Adjust the value as needed (0.0 - 1.0).
       getDirection: true, // Enable drag behavior for direction detection.
-    });
-
-    const imgLoad = imagesLoaded(myRef.current);
-    imgLoad.on("done", () => {
-      // Trigger a scroll update to recalculate the height
-      scroll.update();
     });
 
     return () => {
@@ -39,12 +32,16 @@ function App() {
     };
   }, []);
 
-  const width = window.innerWidth
-  const height = window.innerHeight
-  console.log("width:",width,"height:",height)
+  const width = window.innerWidth;
+  const height = window.innerHeight;
+  console.log("width:", width, "height:", height);
 
   return (
-    <main className="bg-[#E9E0C3]  " ref={myRef} data-scroll-container>
+    <main
+      className="bg-[#E9E0C3]  overflow-hidden"
+      ref={myRef}
+      data-scroll-container
+    >
       <section data-scroll-section>
         <Header />
       </section>

@@ -45,7 +45,7 @@ function Blog() {
   };
 
   return (
-    <div ref={element} className=" h-[120vh] lg:h-auto  w-full mb-[100px]">
+    <div ref={element} className=" h-auto lg:h-auto  w-full mb-[100px]">
       <section className="flex flex-col h-auto lg:h-screen w-full items-center ">
         <motion.div
           variants={text}

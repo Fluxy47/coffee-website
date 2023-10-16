@@ -5,7 +5,7 @@ export default {
     extend: {
       backgroundImage: {
         footerbg:
-          "url('https://ik.imagekit.io/fluxy/CoffeeFolder/footer-bg.png?tr=w-1200')",
+          "url('https://ik.imagekit.io/fluxy/CoffeeFolder/footer-bg.png?tr=w-1600')",
         clientbg:
           "url('https://ik.imagekit.io/fluxy/CoffeeFolder/client-bg.png?tr=w-1200')",
       },
