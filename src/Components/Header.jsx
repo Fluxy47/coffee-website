@@ -10,8 +10,16 @@ const text = {
   show: {
     opacity: 1,
   },
-  exit: {
+};
+
+const text2 = {
+  hidden: {
     opacity: 0,
+    x: "-50%",
+  },
+  show: {
+    opacity: 1,
+    x: 0,
   },
 };
 
@@ -87,7 +95,17 @@ function Header() {
           <h2 className="text-lg cursor-pointer font-bold">Blogs</h2>
         </div>
       </div>
-      <section className="relative top-[30%] mx-1 lg:ml-10 flex flex-col w-full lg:w-[35vw] z-[3]">
+      <motion.section
+        initial={{ opacity: 0 }}
+        variants={text2}
+        animate={controls}
+        transition={{
+          duration: 0.7,
+          type: "spring",
+          bounce: 0.4,
+        }}
+        className="relative top-[30%] mx-1 lg:ml-10 flex flex-col w-full lg:w-[35vw] z-[3]"
+      >
         <h1 className="text-5xl md:text-7xl lg:text-5xl 2xl:text-7xl font-raleway ml-1 italic">
           Best Coffee
         </h1>
@@ -107,7 +125,7 @@ function Header() {
         <button className="bg-gradient-to-r from-[#C79363]  to-[#140B06] hover:bg-blue-700 w-[300px] h-[50px] lg:w-[300px] lg:h-[50px] md:w-[400px] md:h-[70px] 2xl:w-[400px] 2xl:h-[60px]  text-white font-bold py-2 px-4 mx-auto rounded-full z-50">
           Button
         </button>
-      </section>
+      </motion.section>
     </div>
   );
 }

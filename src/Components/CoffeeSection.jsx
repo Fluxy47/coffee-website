@@ -77,6 +77,17 @@ function CoffeeSection() {
     },
   ];
 
+  const text2 = {
+    hidden: {
+      opacity: 0,
+      x: "-50%",
+    },
+    show: {
+      opacity: 1,
+      x: 0,
+    },
+  };
+
   return (
     <div ref={element} className="h-auto w-full">
       <section className="flex flex-col h-auto lg:h-screen w-full items-center justify-evenly">
@@ -97,7 +108,8 @@ function CoffeeSection() {
           variants={slider}
           animate={controls}
           transition={{
-            duration: 0.5,
+            duration: 0.3,
+            ease: "easeOut",
           }}
           className="w-full hidden lg:inline"
         >
@@ -117,7 +129,17 @@ function CoffeeSection() {
 
         <motion.div className="flex-col lg:hidden h-auto">
           {items.map((item, idx) => (
-            <Card key={idx} item={item} />
+            <motion.div
+              variants={text2}
+              animate={controls}
+              transition={{
+                duration: 0.3,
+                ease: "easeOut",
+              }}
+              key={idx}
+            >
+              <Card item={item} />
+            </motion.div>
           ))}
         </motion.div>
       </section>
